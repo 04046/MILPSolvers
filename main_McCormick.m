@@ -4,7 +4,7 @@
 % Author: X Yang 
 % Date: 2025/4/17
 % E-mail: 
-% Ref. : https://blog.csdn.net/qq_40926887/article/details/114789742
+% Ref. : [1] "Susan Urban, McCormick envelopes." Accessed: Jul. 23, 2023. [Online]. Available: https://optimization.cbe.cornell.edu/index.php?title=McCormick_envelopes
 
 clear all;
 close all;
@@ -21,8 +21,8 @@ y = sdpvar(1);
 w = sdpvar(1); % Represents the linearized term x*y
 
 % Set variable bounds
-x_lb = -2; x_ub = 2;   % x ¡Ê [-2, 2]
-y_lb = -1; y_ub = 3;   % y ¡Ê [-1, 3]
+x_lb = -2; x_ub = 2;   % x Â¡ÃŠ [-2, 2]
+y_lb = -1; y_ub = 3;   % y Â¡ÃŠ [-1, 3]
 
 % McCormick envelope constraints in matrix form
 % Reformulate inequalities as A*[w;x;y] <= b
